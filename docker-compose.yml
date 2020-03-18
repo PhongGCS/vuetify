@@ -1,0 +1,54 @@
+version: '3'
+
+services:   
+    db:
+        image: mariadb
+        ports:
+            - "3307:3306"
+        volumes:
+            - "./files/docker/db-dumps/:/docker-entrypoint-initdb.d/"
+        env_file: "./files/env/docker.db.env"
+
+        container_name: ${DOCKER_CONTAINER_NAME}_db
+        networks:
+            - localdev
+
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin
+        links:
+            - db:db
+        ports:
+            - "8181:80"
+        environment:
+            MYSQL_USERNAME: root
+            MYSQL_ROOT_PASSWORD: Aa123123        
+
+        container_name: ${DOCKER_CONTAINER_NAME}_phpmyadmin
+        networks:
+            - localdev
+
+    web:
+        build: .
+        image: ${DOCKER_CONTAINER_NAME}
+        container_name: ${DOCKER_CONTAINER_NAME}_web
+
+        build:
+            context: .
+            args:
+                - XDEBUG_REMOTE_HOST=${XDEBUG_REMOTE_HOST}
+                - XDEBUG_IDEKEY=${XDEBUG_IDEKEY}
+        ports:
+            - "80:80"
+            - "443:443"
+        networks:
+            - localdev
+        links:
+            - db
+        volumes:
+            - ./site:/app:cached
+            - ./:/source:cached
+            - ./files/logs:/logs/app:cached
+
+networks:
+  localdev:
+    external: true

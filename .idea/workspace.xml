@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a959d822-819c-4504-89fd-5cb41d0f1c7f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/site/web/app/themes/vue-wordpress/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/web/app/themes/vue-wordpress/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/web/app/themes/vue-wordpress/src/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/site/web/app/themes/vue-wordpress/src/api/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/web/app/themes/vue-wordpress/src/components/Page.vue" beforeDir="false" afterPath="$PROJECT_DIR$/site/web/app/themes/vue-wordpress/src/components/Page.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/web/app/themes/vue-wordpress/template-parts/site-loading.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/web/app/themes/vue-wordpress/template-parts/site-loading.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/web/app/themes/vue-wordpress/webpack.dev.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/site/web/app/themes/vue-wordpress/webpack.dev.config.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/site/composer.json</pharConfigPath>
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/site/web/app/themes/vue-wordpress" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/site/vendor/byjg/mailwrapper" />
+      <path value="$PROJECT_DIR$/site/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/site/vendor/johnbillion/extended-cpts" />
+      <path value="$PROJECT_DIR$/site/vendor/byjg/webrequest" />
+      <path value="$PROJECT_DIR$/site/vendor/byjg/convert" />
+      <path value="$PROJECT_DIR$/site/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/site/vendor/byjg/uri" />
+      <path value="$PROJECT_DIR$/site/vendor/querypath/querypath" />
+      <path value="$PROJECT_DIR$/site/vendor/judev/php-htmltruncator" />
+      <path value="$PROJECT_DIR$/site/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/site/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/site/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/site/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/site/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/site/vendor/masterminds/html5" />
+      <path value="$PROJECT_DIR$/site/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/site/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/site/vendor/roots/wp-config" />
+      <path value="$PROJECT_DIR$/site/vendor/symfony/polyfill-php54" />
+      <path value="$PROJECT_DIR$/site/vendor/squizlabs/php_codesniffer" />
+      <path value="$PROJECT_DIR$/site/vendor/symfony/polyfill-php55" />
+      <path value="$PROJECT_DIR$/site/vendor/roots/wordpress-core-installer" />
+      <path value="$PROJECT_DIR$/site/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/site/vendor/roots/wp-password-bcrypt" />
+      <path value="$PROJECT_DIR$/site/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/site/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/site/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/site/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/site/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/site/vendor/composer" />
+      <path value="$PROJECT_DIR$/site/vendor/google/recaptcha" />
+      <path value="$PROJECT_DIR$/site/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/site/vendor/aws/aws-sdk-php" />
+      <path value="$PROJECT_DIR$/site/vendor/oscarotero/env" />
+      <path value="$PROJECT_DIR$/site/vendor/php-di/invoker" />
+      <path value="$PROJECT_DIR$/site/vendor/phpmailer/phpmailer" />
+      <path value="$PROJECT_DIR$/site/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/site/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/site/vendor/stoutlogic/acf-builder" />
+      <path value="$PROJECT_DIR$/site/vendor/illuminate/container" />
+      <path value="$PROJECT_DIR$/site/vendor/illuminate/events" />
+      <path value="$PROJECT_DIR$/site/vendor/illuminate/contracts" />
+      <path value="$PROJECT_DIR$/site/vendor/illuminate/view" />
+      <path value="$PROJECT_DIR$/site/vendor/illuminate/support" />
+      <path value="$PROJECT_DIR$/site/vendor/illuminate/filesystem" />
+      <path value="$PROJECT_DIR$/site/vendor/samrap/acf-fluent" />
+      <path value="$PROJECT_DIR$/site/vendor/kylekatarnls/update-helper" />
+      <path value="$PROJECT_DIR$/site/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/site/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/site/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/site/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/site/vendor/danielstjules/stringy" />
+      <path value="$PROJECT_DIR$/site/vendor/duncan3dc/blade" />
+      <path value="$PROJECT_DIR$/site/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/site/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/site/vendor/extremesensio/wp-cli-plugin-acf-sync" />
+      <path value="$PROJECT_DIR$/site/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/site/vendor/container-interop/container-interop" />
+      <path value="$PROJECT_DIR$/site/vendor/ircmaxell/password-compat" />
+      <path value="$PROJECT_DIR$/site/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/site/vendor/mtdowling/jmespath.php" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1YkB7vTCC5hpSQRWKuTF43nkcZh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="foldersAlwaysOnTop" value="false" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/site/web/app/themes/cs-indotrek-com" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/site/web/app/themes/cs-indotrek-com" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a959d822-819c-4504-89fd-5cb41d0f1c7f" name="Default Changelist" comment="" />
+      <created>1583476547523</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583476547523</updated>
+      <workItem from="1583476553087" duration="6624000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="703" y="361" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583482566825">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="703" y="361" key="#com.intellij.fileTypes.FileTypeChooser/1920.23.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1583482566825" />
+    <state x="653" y="384" key="com.intellij.ide.util.TipDialog" timestamp="1583476553587">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="653" y="384" key="com.intellij.ide.util.TipDialog/1920.23.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1583476553587" />
+  </component>
+</project>

@@ -1,0 +1,200 @@
+{
+    "key": "group_5e3e706c035a1",
+    "title": "Hotel Content",
+    "fields": [
+        {
+            "key": "field_5e3e706c148ae",
+            "label": "Hero Image",
+            "name": "heroImage",
+            "type": "image",
+            "instructions": "size: full-width",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": 1440,
+            "min_height": "",
+            "min_size": "",
+            "max_width": 2000,
+            "max_height": 1000,
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5e4451a996e24",
+            "label": "Overview",
+            "name": "overview",
+            "type": "textarea",
+            "instructions": "Add html code here\r\n&#x272F; Elevator access but you&#x27;re welcome to take the stairs too&#x3C;br&#x3E; \r\n&#x272F; Cleaning and freshening every other day",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 5,
+            "new_lines": ""
+        },
+        {
+            "key": "field_5e4450ab7ed5e",
+            "label": "Note Listing",
+            "name": "noteLiting",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_5e4450bb7ed5f",
+                    "label": "Caption",
+                    "name": "caption",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "30",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5e4450f17ed60",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "70",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5e4450f87ed61",
+                    "label": "Text",
+                    "name": "text",
+                    "type": "textarea",
+                    "instructions": "Add html code here\r\n&#x3C;ul class=&#x22;star-list&#x22;&#x3E;\r\n&#x3C;li&#x3E;A&#x3C;\/li&#x3E;\r\n&#x3C;li&#x3E;B&#x3C;\/li&#x3E;\r\n&#x3C;\/ul&#x3E;",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 10,
+                    "new_lines": ""
+                }
+            ]
+        },
+        {
+            "key": "field_5e44529b44435",
+            "label": "Thumbnail",
+            "name": "thumbnail",
+            "type": "image",
+            "instructions": "Display for hotel Listing. Size: 600x400, ratio: 3:2",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": 300,
+            "min_height": 300,
+            "min_size": "",
+            "max_width": 800,
+            "max_height": 800,
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5e4457f44262e",
+            "label": "Photos Gallery",
+            "name": "photosGallery",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_5e3e410f32d48"
+            ],
+            "display": "group",
+            "layout": "block",
+            "prefix_label": 1,
+            "prefix_name": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "hotel"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "revisions",
+        "author",
+        "format",
+        "categories",
+        "tags"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1581998707
+}

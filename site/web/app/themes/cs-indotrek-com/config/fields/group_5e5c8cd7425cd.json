@@ -1,0 +1,43 @@
+{
+    "key": "group_5e5c8cd7425cd",
+    "title": "Tour Type",
+    "fields": [
+        {
+            "key": "field_5e5c8ceaf3bf1",
+            "label": "is Public?",
+            "name": "isPublic",
+            "type": "true_false",
+            "instructions": "set false for hiding add to cart section.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "Public",
+            "ui_off_text": "Private"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "product"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1583124129
+}

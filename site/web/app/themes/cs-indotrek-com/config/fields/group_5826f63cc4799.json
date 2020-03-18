@@ -1,0 +1,142 @@
+{
+    "key": "group_5826f63cc4799",
+    "title": "Clonable: Script Content Type",
+    "fields": [
+        {
+            "key": "field_5826f64b68e73",
+            "label": "Script Type",
+            "name": "script_type",
+            "type": "select",
+            "instructions": "Determines if the script is embedded or linked to externally.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "choices": {
+                "external": "External",
+                "script": "Script",
+                "local": "Local Script"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5826fb2ccd3a6",
+            "label": "Script Location",
+            "name": "script_location",
+            "type": "select",
+            "instructions": "Where the script should be included, in the head tag or at the bottom of the HTML page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "choices": {
+                "header": "Header",
+                "footer": "Footer"
+            },
+            "default_value": [
+                "footer"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5826f67868e74",
+            "label": "Script URL",
+            "name": "script_url",
+            "type": "text",
+            "instructions": "External: provide the complete URL\r\nLocal: provide path relative to the \"public\" directory",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5826f64b68e73",
+                        "operator": "==",
+                        "value": "external"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5826f64b68e73",
+                        "operator": "==",
+                        "value": "local"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "default_value": "",
+            "placeholder": "URL",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5826f68c68e75",
+            "label": "Script",
+            "name": "script",
+            "type": "textarea",
+            "instructions": "Javascript to embed.  Don't use script tags.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5826f64b68e73",
+                        "operator": "==",
+                        "value": "script"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 8,
+            "new_lines": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1579058108
+}

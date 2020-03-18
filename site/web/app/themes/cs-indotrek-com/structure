@@ -1,0 +1,291 @@
+home-hero
+  title
+  image
+  imageMobile
+  cta
+  scrollUrl: #overview
+
+1 - Home - About US
+  caption
+  title
+  description (html)
+  imageMobile
+  image
+
+2 - Home - Destination
+  caption
+  title
+  description
+  destinationList (repeater)
+    DestinationItem
+      title
+      description
+      image
+      link 
+        url
+        name: "Discover"
+
+3 - Home - Tours
+  caption
+  title
+  description
+  cta
+  tourList (repeater)
+    TourItem (woocommerce product)
+        title: "Borobudur – One of the Greatest Buddhist Sites in the World",
+        image: "/img/destination-1.jpg",
+        link: '/single-tour.html',
+        destinationType: 'thai-land',
+        destination: 'Thailand',
+        durationType: '16-days',
+        duration: '16 Days',
+        categoryType: 'outside',
+        type: 'outside',
+        activityType: 'cycle',
+        activity: {
+            name: 'Cycle',
+            icon: '/img/cycling.svg'
+        },
+        priceHtml: '$1000'
+4 - Home - Blog
+  caption
+  title
+  description
+  cta
+  blogList
+    date
+    title
+    description
+5 - Home - Contact
+  title
+  description
+  cta
+-------------------------------------------------------------------------------------------------------------
+
+
+Destination (Category Level 1)
+Hero Destination
+  title
+  background
+  backgroundMobile
+  svgMap
+1 - Destination - Overview
+  title
+  description
+  contryInfo (repeater)
+    icon, 
+    caption, 
+    title
+2 - Destination - Photos Gallery
+  caption
+  title
+  cta
+  gallery
+------------------------------------------------------------------------------------------------------------
+
+
+Destination (Category Level 2)
+Hero Destination
+  title
+  background
+  backgroundMobile
+1 - Destination - Overview
+  caption
+  title
+  gallery [
+    caption, src
+  ]
+    icon, caption, title
+2 - Destination - Photos Gallery
+  caption
+  title
+  cta
+  gallery
+
+Tour Sibling inside parrent (Destination Level 1)
+------------------------------------------------------------------------------------------------------------
+
+
+Tour 
+  function getDataForList 
+    TourItem (woocommerce product)
+        title: "Borobudur – One of the Greatest Buddhist Sites in the World",
+        image: "/img/destination-1.jpg",
+        link: '/single-tour.html',
+        destinationType: 'thai-land',
+        destination: 'Thailand',
+        durationType: '16-days',  // this is category Duration Day
+        duration: '16 Days',
+        categoryType: 'outside',  
+        type: 'outside',
+        activityType: 'cycle',    // this is category Activity
+        activity: {
+            name: 'Cycle',
+            icon: '/img/cycling.svg'
+        },
+        priceHtml: '$1000'
+
+------------------------------------------------------------------------------------------------------------
+
+Blog
+  function getDataForList
+    date
+    title
+    description
+    url
+
+
+------------------------------------------------------------------------------------------------------------
+
+
+Tour Listing
+Hero 
+  title
+  background
+  backgroundMobile
+1 - Tour Listing - Overview
+  title
+  description
+2 - Tour Listing - Listing
+  filterCategory
+    Destination (just get destination lv2)
+    Duration
+    Activity
+    Type
+
+------------------------------------------------------------------------------------------------------------
+
+Tour Detail 
+  Hero
+    background
+    backgroundImage
+  Overview
+    image
+    overviewListing (repeater)
+      text
+    htmlText
+
+  Detail
+    getDuration()
+    getActivity
+    getPrice()
+    tableDetail (repeater)
+      heading
+      text (Html)
+  Itinerary
+    ctaFile
+    itineraryItems (repeater)
+      day
+      title
+      text
+  Photos Gallery
+    caption
+    title
+    cta
+    gallery
+  RelatedDestination
+    [ $item->getDataForList(),  ... ] 
+
+
+------------------------------------------------------------------------------------------------------------
+
+Hotels
+  Hero
+    title
+    background
+    backgroundMobile
+  1 - Hotel - Overview
+    title
+    desctiption
+  2 - Hotel - Hotel Listing
+    Country
+
+------------------------------------------------------------------------------------------------------------
+
+Hotel Detail
+  Hero
+    title
+    background
+    backgroundMobile
+  Hotel Content (Flex Layout)
+    Overview
+      htmlContent (instruction: class list)
+    Notes
+      noteItem
+        caption
+        title
+        htmlContent (instruction: class list)
+    Photos Gallery
+      caption
+      title
+      cta
+      gallery
+------------------------------------------------------------------------------------------------------------
+
+Blog Listing
+  Blog Listing 
+    caption
+    title
+    Blog Listing - 10 post, Total Page, Current Page, 
+        function getDataForList
+          date
+          title
+          description (just show at listing Blog Section)
+          url
+
+
+
+------------------------------------------------------------------------------------------------------------
+
+Blog Detail
+  Hero
+    background
+    backgroundMobile
+  Content
+    date => get_date("July 01, 2019")
+    url => get_permalink()
+    content:  {!! apply_filters('the_content', get_post_field('post_content', get_the_ID())) !!}
+  Tag
+  Related Product
+
+------------------------------------------------------------------------------------------------------------
+
+Contact
+  ContactUs (Group)
+    caption
+    title
+    description
+    instructionText
+    getFormData
+  
+------------------------------------------------------------------------------------------------------------
+Private Tour (Group)
+    caption
+    title
+    description
+    instructionText
+    getFormData
+
+------------------------------------------------------------------------------------------------------------
+Contact Thank You
+  title
+  description
+  cta
+  image
+
+
+
+------------------------------------------------------------------------------------------------------------
+
+Privacy Policy
+  title
+  content: {!! apply_filters('the_content', get_post_field('post_content', get_the_ID())) !!}
+
+
+------------------------------------------------------------------------------------------------------------
+
+
+Theme Setting
+  Contact Box (Display at Contact and Private Tour Contact)
+
+

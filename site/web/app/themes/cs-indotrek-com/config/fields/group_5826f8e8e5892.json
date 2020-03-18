@@ -1,0 +1,116 @@
+{
+    "key": "group_5826f8e8e5892",
+    "title": "Page Scripts",
+    "fields": [
+        {
+            "key": "field_5826f919777de",
+            "label": "Scripts",
+            "name": "scripts",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "row",
+            "button_label": "Add Script",
+            "sub_fields": [
+                {
+                    "key": "field_5826f925777df_field_5826f68c68e75",
+                    "label": "Script",
+                    "name": "script",
+                    "type": "textarea",
+                    "instructions": "Javascript to embed.  Don't use script tags.",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5826f64b68e73",
+                                "operator": "==",
+                                "value": "script"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 8,
+                    "new_lines": "",
+                    "_clone": "field_5826f925777df",
+                    "__key": "field_5826f68c68e75",
+                    "__name": "script",
+                    "__label": "Script"
+                }
+            ]
+        },
+        {
+            "key": "field_5dc535d343750",
+            "label": "Styles",
+            "name": "styles",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "row",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_5dc535e343751",
+                    "label": "Internal Style",
+                    "name": "style",
+                    "type": "textarea",
+                    "instructions": "CSS to embed.  Don't use style tags.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 8,
+                    "new_lines": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 4000,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1573206740
+}
